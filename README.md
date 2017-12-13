@@ -23,6 +23,15 @@ zoc logs [KEYWORD]
 * password, if you mind, you can leave it empty or don't use it.
 * host, the Openshift server host.
 
+```
+{
+      "defaultKeyword": "mypod",
+      "username": "myname",
+      "password": "mypass",
+      "host": "myhost"
+}
+```
+
 # LICENSE
 
 MIT
