@@ -1,0 +1,25 @@
+{
+  "name": "zoc",
+  "version": "0.0.1",
+  "bin": {
+    "zoc": "index.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "find-up": "^2.1.0",
+    "fuzzy": "^0.1.3",
+    "inquirer": "^4.0.1",
+    "inquirer-autocomplete-prompt": "^0.12.0",
+    "readline-sync": "^1.4.7",
+    "shelljs": "^0.7.8",
+    "yargs": "^10.0.3"
+  },
+  "devDependencies": {
+    "eslint": "^4.13.1",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1"
+  }
+}
