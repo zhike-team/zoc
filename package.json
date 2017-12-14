@@ -1,6 +1,17 @@
 {
   "name": "zoc",
   "version": "0.0.1",
+  "description": "zoc shortcuts some oc commands",
+  "keywords": [
+    "Openshift", "oc"
+  ],
+  "repository": { 
+    "type": "git", 
+    "url": "https://github.com/vipzhicheng/zoc.git" 
+  },
+  "bugs": { 
+    "url": "https://github.com/vipzhicheng/zoc/issues" 
+  },
   "bin": {
     "zoc": "index.js"
   },

@@ -12,6 +12,7 @@ Zoc is a shortcut for using oc(Openshift CLI) logs/rsh commands
 
 ```
 npm i -g zoc
+zoc rsh [KEYWORD] --username=[USERNAME] --host=[HOST]
 zoc rsh [KEYWORD]
 zoc logs [KEYWORD]
 ```
@@ -26,9 +27,11 @@ zoc logs [KEYWORD]
 ```
 {
       "defaultKeyword": "mypod",
-      "username": "myname",
-      "password": "mypass",
-      "host": "myhost"
+      "oc": {
+        "username": "myname",
+        "password": "mypass",
+        "host": "myhost"
+      }
 }
 ```
 
