@@ -7,6 +7,13 @@ exports.desc = 'Output pods logs'
 
 exports.handler = function (argv) {
   const filteredPods = func.getFilteredPods(argv)
+  if (filteredPods.length === 1) {
+    const logsPods = filteredPods.map(p => `oc logs -f --tail 1 ${p}`).join(' & ')
+    shell.exec(`cat <(${logsPods})`, {
+      shell: shell.which('bash').stdout
+    })
+    return
+  }
 
   inquirer.prompt([
     {

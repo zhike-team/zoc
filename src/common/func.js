@@ -23,7 +23,7 @@ const getFilteredPods = function (argv) {
   }
 
   const pods = listPods.stdout.trim().split('\n')
-  const filteredPods = fuzzy(pods, keyword)
+  const filteredPods = keyword ? fuzzy(pods, keyword) : pods
 
   return filteredPods
 }

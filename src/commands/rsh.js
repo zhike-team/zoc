@@ -9,6 +9,12 @@ exports.desc = 'Rsh onto a pod'
 
 exports.handler = function (argv) {
   const filteredPods = func.getFilteredPods(argv)
+  if (filteredPods.length === 1) {
+    spawn('oc', ['rsh', filteredPods.shift()], {
+      stdio: 'inherit'
+    })
+    return
+  }
 
   inquirer.prompt([
     {
